@@ -31,8 +31,8 @@ from scipy.stats import spearmanr, kendalltau
 
 warnings.filterwarnings('ignore')
 
-# Create output directory
-output_dir = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Final results (dataset_28.8)\Israel model run\LR_country_final_single_run1'
+# Create output directory and give your own path for output directory where you want to save the results
+output_dir = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Final results (dataset_28.8)\Israel model run\LR_country_final_single_run1' # used in my case
 os.makedirs(output_dir, exist_ok=True)
 
 # Create visualization directories upfront
@@ -43,8 +43,8 @@ single_run_dir = os.path.join(output_dir, "single_run_results")
 os.makedirs(single_run_dir, exist_ok=True)
 
 sheet_name = "Sheet1"
-# Load your data
-excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Dataset_to_share.xlsx'
+# Load your data and give your own path in #excelFilePath, where the data shared is been saved
+excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Dataset_to_share.xlsx' # used in my case
 df = pd.read_excel(excelFilePath, sheet_name)
 basin_data = df['Hydrological Basin']
 

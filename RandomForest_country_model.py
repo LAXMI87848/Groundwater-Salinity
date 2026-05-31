@@ -44,7 +44,7 @@ os.makedirs(single_run_dir, exist_ok=True)
 
 sheet_name = "Sheet1"
 # Load your data and give your own path in #excelFilePath, where the data shared is present
-excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\dataset_28.8.xlsx' # used in my case
+excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Dataset_to_share.xlsx' # used in my case
 df = pd.read_excel(excelFilePath, sheet_name)
 basin_data = df['Hydrological Basin']
 

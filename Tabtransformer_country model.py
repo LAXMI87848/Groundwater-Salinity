@@ -31,8 +31,8 @@ random.seed(42)
 np.random.seed(42)
 tf.random.set_seed(42)
 
-# Create output directory for RFE selected features run
-output_dir = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Final results (dataset_28.8)\Israel model run\TabTransformer_RFE_Selected_Features'
+# Create output directory and give your own path where you want to save the results
+output_dir = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Final results (dataset_28.8)\Israel model run\TabTransformer_RFE_Selected_Features'  # used in my case 
 os.makedirs(output_dir, exist_ok=True)
 
 # Create subdirectories
@@ -71,8 +71,9 @@ def clean_feature_name(name):
 
 
 # ==================== DATA LOADING ====================
+ # Load the data and give your own path in #excelFilePath, where the data shared is been saved
 sheet_name = "Sheet1"
-excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\dataset_28.8.xlsx'
+excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Dataset_to_share.xlsx'  # used in my case
 df = pd.read_excel(excelFilePath, sheet_name)
 print(f"Original dataset shape: {df.shape}")
 

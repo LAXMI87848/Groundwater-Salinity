@@ -20,9 +20,9 @@ from SALib.sample import sobol as sobol_sample
 from SALib.analyze import sobol as sobol_analyze
 
 # -----------------------------
-# Output dirs
+# Output dirs # give your own path for output directory where you want to save the results
 # -----------------------------
-output_dir = r"E:\Python\India Project\output_figures\dataset2910\LSTM\All_basins"
+output_dir = r"E:\Python\India Project\output_figures\dataset2910\LSTM\All_basins" # used in my case
 os.makedirs(output_dir, exist_ok=True)
 loss_plots_dir = os.path.join(output_dir, "loss_plots")
 os.makedirs(loss_plots_dir, exist_ok=True)
@@ -602,11 +602,10 @@ with open(log_file_path, 'w') as log_file:
         print(f"Current time: {datetime.now()}\n")
 
         # -----------------------------
-        # Load / basic prep
+        # Load / basic prep/ Give your own path where the data used is present
         # -----------------------------
         sheet_name = "Sheet1"
-        basin_name = "Galil West"
-        excelFilePath = r'E:\Python\India Project\GWS_Model info\dataset_29.10.xlsx'
+        excelFilePath = r'E:\Python\India Project\GWS_Model info\Dataset_to_share.xlsx' # used in my case
         df = pd.read_excel(excelFilePath, sheet_name)
 
         basin_data = df.copy()

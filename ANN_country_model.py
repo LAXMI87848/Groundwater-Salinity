@@ -33,9 +33,9 @@ except Exception:
 
 
 # =========================
-# Setup output directories
+# Setup output directories and path where the results need to be saved
 # =========================
-output_dir = r"E:\Python\India Project\output_figures\dataset2910\ANN\All_basins"
+output_dir = r"E:\Python\India Project\output_figures\dataset2910\ANN\All_basins" # used in my case
 os.makedirs(output_dir, exist_ok=True)
 shap_dir = os.path.join(output_dir, "shap_plots");          os.makedirs(shap_dir, exist_ok=True)
 cv_dir   = os.path.join(output_dir, "cross_validation");    os.makedirs(cv_dir, exist_ok=True)
@@ -43,11 +43,11 @@ gsa_dir   = os.path.join(output_dir, "GSA");    os.makedirs(gsa_dir, exist_ok=Tr
 
 
 # ==============================
-# Data loading and preprocessing
+# Data loading and preprocessing # give your own path of excelFilePath where the data shared is present
 # ==============================
 sheet_name   = "Sheet1"
-basin_name   = "Galil West"  # Coast, Yarkatan, Negev and Arava, Sea of galilee, mountin east, Carmel, Galil West
-excelFilePath = r"E:\Python\India Project\GWS_Model info\dataset_29.10.xlsx"
+#basin_name   = "Galil West"  # Coast, Yarkatan, Negev and Arava, Sea of galilee, mountin east, Carmel, Galil West
+excelFilePath = r"E:\Python\India Project\GWS_Model info\Dataset_to_share.xlsx" # used in my case
 
 df = pd.read_excel(excelFilePath, sheet_name)
 # basin_data = df[df["Hydrological Basin"] == basin_name].copy()

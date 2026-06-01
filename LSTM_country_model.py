@@ -605,6 +605,7 @@ with open(log_file_path, 'w') as log_file:
         # Load / basic prep/ Give your own path where the data used is present
         # -----------------------------
         sheet_name = "Sheet1"
+        #basin_name   = "Galil West"  # Coast, Yarkatan, Negev and Arava, Sea of galilee, mountin east, Carmel, Galil West
         excelFilePath = r'E:\Python\India Project\GWS_Model info\Dataset_to_share.xlsx' # used in my case
         df = pd.read_excel(excelFilePath, sheet_name)
 

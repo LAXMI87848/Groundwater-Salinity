@@ -14,8 +14,8 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# Create output directory
-output_dir = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Final results (dataset_28.8)\Israel model run\DML_new'
+# Create output directory and give your own path where you want to save the results
+output_dir = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Final results (dataset_28.8)\Israel model run\DML_new' # used in my case
 os.makedirs(output_dir, exist_ok=True)
 
 # Create plots directory
@@ -23,8 +23,8 @@ plots_dir = os.path.join(output_dir, "dml_interpretation_plots")
 os.makedirs(plots_dir, exist_ok=True)
 
 sheet_name = "Sheet1"
-# Load your data
-excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\dataset_28.8.xlsx'
+# Load your data and giveyour own path of location where the data shared is present
+excelFilePath = r'G:\IIT_AI work\ISRAEL\GWS_Model info\Data and feature score\Revised data and feature_fitting scores\Dataset_to_share.xlsx' # used in my case
 df = pd.read_excel(excelFilePath, sheet_name)
 basin_data = df['Hydrological Basin']
 

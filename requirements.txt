@@ -1,0 +1,32 @@
+#####Dependencies (Full List)
+###The requirements.txt file includes packages necessary for all codes files shared and to run them properly :
+
+
+# Core scientific computing
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+xgboost>=1.5.0
+imbalanced-learn>=0.9.0
+
+# Deep Learning
+tensorflow>=2.10.0
+
+# Statistical modeling
+statsmodels>=0.13.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Explainable AI (XAI)
+shap>=0.40.0
+SALib>=1.4.0
+
+# Utilities
+joblib>=1.1.0
+tqdm>=4.62.0
+openpyxl>=3.0.0

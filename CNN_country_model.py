@@ -25,18 +25,19 @@ from sklearn.impute import SimpleImputer
 
 
 # ---------------------------
-# Config
+# Config and give your own path for output directory where you want to save your results
 # ---------------------------
-output_dir = r"D:\Python\India Project\output_figures\dataset2910\CNN\NEW\All_basins"
+output_dir = r"D:\Python\India Project\output_figures\dataset2910\CNN\NEW\All_basins" # used in my case
 os.makedirs(output_dir, exist_ok=True)
 CV_plots_dir = os.path.join(output_dir, "CV_plots")
 os.makedirs(CV_plots_dir, exist_ok=True)
 GSA_dir = os.path.join(output_dir, "GSA8192")
 os.makedirs(GSA_dir, exist_ok=True)
 
+
+# Load the data shared and give the path in #excelFilePath, where it is present
 sheet_name = "Sheet1"
-basin_name = "mountin east"  # Coast, Yarkatan, Negev and Arava, Sea of galilee, mountin east, Carmel, Galil West
-excelFilePath = r'D:\Python\India Project\GWS_Model info\dataset_29.10.xlsx'
+excelFilePath = r'D:\Python\India Project\GWS_Model info\Dataset_to_share.xlsx' # used in my case
 
 # Random seeds
 random.seed(1235)

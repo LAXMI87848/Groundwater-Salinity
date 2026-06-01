@@ -37,6 +37,7 @@ os.makedirs(GSA_dir, exist_ok=True)
 
 # Load the data shared and give the path in #excelFilePath, where it is present
 sheet_name = "Sheet1"
+#basin_name   = "Galil West"  # Coast, Yarkatan, Negev and Arava, Sea of galilee, mountin east, Carmel, Galil West
 excelFilePath = r'D:\Python\India Project\GWS_Model info\Dataset_to_share.xlsx' # used in my case
 
 # Random seeds

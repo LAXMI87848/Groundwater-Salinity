@@ -17,7 +17,10 @@ The pipeline includes data preprocessing, training of seven machine learning mod
 % \*\*\* Source Code is mainly written for research purposes. The codes are
 
 % \*\*\* having copyrights and required proper citations whenever it is used.
+% \*\*\*Citation
+% \*\*\*If you use this code, please cite the associated paper.
 
+% \*\*\*Authors: Dr. Laxmi Pandey, Dr. Adway Mitra, and co-authors
 % \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
 
